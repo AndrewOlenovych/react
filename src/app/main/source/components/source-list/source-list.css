@@ -1,0 +1,76 @@
+span {
+    padding: 10px;
+    font-weight: 700;
+}
+
+.Tile {
+    border: 1px solid red;
+    text-align: center;
+    width: 30%;
+    margin: 20px auto;
+    box-shadow: 0 0 10px 5px rgb(225, 112, 112);
+}
+
+.SlideInUp {
+    visibility: hidden;
+    opacity: .5;
+    background-color: gray;
+    height: auto;
+    padding: 20px;
+}
+
+.Tile:hover .SlideInUp {
+    visibility: visible;
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.NoSource {
+    margin: 50px auto;
+}
+
+@-webkit-keyframes slideInUp {
+    100% {
+        -webkit-transform: translateY(30%);
+        transform: translateY(30%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        -webkit-transform: translateY(30%);
+        transform: translateY(30%);
+        visibility: visible;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Tile {
+        width: 100%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    .Tile {
+        width: 40%;
+    }
+}

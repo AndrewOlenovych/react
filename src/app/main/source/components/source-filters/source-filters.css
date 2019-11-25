@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+
+.SelectsContainer {
+    margin: 50px;
+}
+
+.SourceContainer {
+    margin: 50px;
+    max-height: 90vh;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px 5px rgb(225, 112, 112);
+}
+
+@media screen and (max-width: 1200px) {
+    .SelectsContainer {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .SourceContainer {
+        margin: 10px;
+    }
+}
